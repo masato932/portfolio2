@@ -17,7 +17,7 @@ class ContactView(View):
         })
     
     def post(self, request, *args, **kwargs):
-        form = form = ContactForm(request.POST or None)
+        form = ContactForm(request.POST or None)
 
         if form.is_valid():
             name = form.cleaned_data['name']
